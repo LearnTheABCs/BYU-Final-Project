@@ -4,6 +4,18 @@ class TicTacToeGame:
     def __init__(self, board):
         self.board = board
 
+    def initialBoard(self):
+
+        # Text Picture of the location of the numbers of the board
+
+        print("""
+         7 | 8 | 9
+        -----------
+         4 | 5 | 6
+        -----------
+         1 | 2 | 3 
+        """)
+
     def drawBoard(self):
         # This function prints out the board that it was passed.
 

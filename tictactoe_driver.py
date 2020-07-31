@@ -9,6 +9,7 @@ while True:
     turn = 1
     ttt.drawBoard()
     gameIsPlaying = True
+    ttt.initialBoard()
 
     while gameIsPlaying:
         if turn == 1:
