@@ -5,11 +5,11 @@ from tictactoe_functions import TicTacToeGame
 while True:
     emptyBoard = [' '] * 10
     ttt = TicTacToeGame(emptyBoard)
+    ttt.initialBoard()
     letter1, letter2 = ttt.inputPlayerLetter()
     turn = 1
     ttt.drawBoard()
     gameIsPlaying = True
-    ttt.initialBoard()
 
     while gameIsPlaying:
         if turn == 1:
