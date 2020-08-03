@@ -23,24 +23,24 @@ class TicTacToeGame:
         #print('   |   |')
         print(' ' + self.board[7] + ' | ' + self.board[8] + ' | ' + self.board[9])
         #print('   |   |')
-        print('-----------')
+        print('---+---+---')
         #print('   |   |')
         print(' ' + self.board[4] + ' | ' + self.board[5] + ' | ' + self.board[6])
         #print('   |   |')
-        print('-----------')
+        print('---+---+---')
         #print('   |   |')
         print(' ' + self.board[1] + ' | ' + self.board[2] + ' | ' + self.board[3])
         #print('   |   |')
 
     def inputPlayerLetter(self):
-        # Lets the player type which letter they want to be.
-        # Returns a list with the player's letter as the first item, and the computer's letter as the second.
+        # Lets player 1 type which letter they want to be.
+        # Returns a list with player 1's letter as the first item, and player 2's letter as the second.
         letter = ''
         while not (letter == 'X' or letter == 'O'):
             print('PLAYER 1, CHOOSE X OR O')
             letter = input().upper()
 
-        # the first element in the tuple is the player's letter, the second is the computer's letter.
+        # the first element in the tuple is player 1's letter, the second is player 2's letter.
         if letter == 'X':
             return ['X', 'O']
         else:
